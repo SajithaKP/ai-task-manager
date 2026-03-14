@@ -12,14 +12,17 @@
         </a>
 
         @if(auth()->user()->role === 'admin')
-         <a href="{{ route('users.index') }}">
-            User Management
-        </a>
-        <a href="{{ route('tasks.index') }}"
-           class="block px-6 py-3 hover:bg-gray-700 transition">
-            Task Management
-        </a>
+         <a href="{{ route('users.index') }}"
+   class="block px-6 py-3 hover:bg-gray-700 transition 
+   {{ request()->routeIs('users.*') ? 'bg-gray-700' : '' }}">
+    User Management
+</a>
 
+<a href="{{ route('tasks.index') }}"
+   class="block px-6 py-3 hover:bg-gray-700 transition
+   {{ request()->routeIs('tasks.*') ? 'bg-gray-700' : '' }}">
+    Task Management
+</a>
         @endif
 
 
