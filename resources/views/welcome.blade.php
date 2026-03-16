@@ -88,7 +88,7 @@
 
 
         <!-- Register Link -->
-        <div class="text-center mt-5 text-xs text-slate-600">
+        <!-- <div class="text-center mt-5 text-xs text-slate-600">
 
             Don't have an account?
 
@@ -96,7 +96,7 @@
                 Register
             </a>
 
-        </div>
+        </div> -->
 
     </div>
 
